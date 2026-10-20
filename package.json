@@ -1,0 +1,49 @@
+{
+  "name": "agent-browser-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that gives agents a real browser: navigation, reading, clicking, typing — with Cloudflare/captcha handling under a budget.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "agent-browser-mcp": "bin/agent-browser-mcp.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "browser",
+    "automation",
+    "playwright",
+    "agents",
+    "captcha",
+    "cloudflare",
+    "scraping"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "node --check src/index.js && node --check src/browser.js && node --check bin/agent-browser-mcp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rustemmustafingovua-byte/agent-browser-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rustemmustafingovua-byte/agent-browser-mcp/issues"
+  },
+  "homepage": "https://github.com/rustemmustafingovua-byte/agent-browser-mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "playwright-core": "^1.61.0"
+  }
+}
