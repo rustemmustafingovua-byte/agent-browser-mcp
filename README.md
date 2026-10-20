@@ -112,6 +112,15 @@ npm test          # 7 unit tests: detection, allowlist, policy
 LIVE=1 npm test   # + real browser against real pages
 ```
 
+## Support
+
+Every tool here is MIT and free. If it saved you time, you can support the work:
+
+- **USDC (Base):** `0x8aC6a229f254980CCd3Dd35CF5E1B7c08880B40E`
+- **GitHub Sponsors:** https://github.com/sponsors/rustemmustafingovua-byte
+
+Paid tiers of the hosted services are billed per call in USDC (x402) — no accounts, no keys.
+
 ## License
 
 MIT © rustemmustafingovua-byte
