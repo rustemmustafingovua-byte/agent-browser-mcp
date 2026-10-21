@@ -2,6 +2,11 @@
 
 # agent-browser-mcp
 
+<p align="center">
+  <img src="docs/social-preview.png" alt="agent-browser-mcp" width="720">
+</p>
+
+
 **A real browser for your agent — navigation, reading, clicking, typing — with Cloudflare and captcha handling under a budget.**
 
 [![CI](https://github.com/rustemmustafingovua-byte/agent-browser-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/rustemmustafingovua-byte/agent-browser-mcp/actions/workflows/ci.yml)
