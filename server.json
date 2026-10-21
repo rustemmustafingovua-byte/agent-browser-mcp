@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.rustemmustafingovua-byte/agent-browser-mcp",
-  "description": "A real browser for AI agents: navigate, read, click, type - with challenge handling under a budget",
+  "description": "A real browser for AI agents: navigation, reading, clicking, typing - with Cloudflare and captcha handling under an explicit budget.",
   "title": "agent-browser-mcp",
   "version": "0.1.0",
   "websiteUrl": "https://github.com/rustemmustafingovua-byte/agent-browser-mcp",
@@ -15,9 +15,7 @@
       "registryBaseUrl": "https://npm.pkg.github.com",
       "identifier": "@rustemmustafingovua-byte/agent-browser-mcp",
       "version": "0.1.0",
-      "transport": {
-        "type": "stdio"
-      },
+      "transport": { "type": "stdio" },
       "environmentVariables": [
         {
           "name": "AGENT_BROWSER_HEADLESS",
@@ -27,15 +25,9 @@
         },
         {
           "name": "AGENT_BROWSER_ALLOWLIST",
-          "description": "Comma-separated domains the paid captcha solver may touch. Empty means the paid path is disabled.",
+          "description": "Domains the paid captcha solver may touch. Empty disables the paid path.",
           "isRequired": false,
           "isSecret": false
-        },
-        {
-          "name": "CAPSOLVER_KEY",
-          "description": "Optional key for a paid captcha solver. Only used for allow-listed domains.",
-          "isRequired": false,
-          "isSecret": true
         }
       ]
     }
